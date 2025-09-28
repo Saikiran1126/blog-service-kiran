@@ -1,0 +1,99 @@
+2025-09-25 14:55:56.287844+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BLOG" not found; SQL statement:
+INSERT INTO blog (BLOG_TITLE, BLOG_CONTENT) VALUES
+('My Journey Learning Spring Boot', 'I started learning Spring Boot last year, and here are some tips.'),
+('Why Hibernate Makes Life Easier', 'An overview of Hibernate and why I prefer it over raw JDBC.'),
+('Building REST APIs the Right Way', 'Some best practices I follow when designing REST APIs.'),
+('Getting Started with Spring Security', 'How I secured my first Spring Boot app with minimal fuss.'),
+('OAuth2 Explained Simply', 'A beginner-friendly explanation of OAuth2 authentication.'),
+('Deploying Spring Boot Apps on AWS', 'My experience deploying a Spring Boot application to AWS Elastic Beanstalk.'),
+('Testing Tips for Spring Boot', 'How I write unit and integration tests using Spring Boot’s testing framework.'),
+('Understanding Spring Data JPA', 'What I learned about using repositories and JPQL queries effectively.'),
+('Handling Errors Gracefully', 'Techniques for providing better error messages and handling exceptions.'),
+('Spring Boot Actuator: Monitoring Made Easy', 'How Actuator helped me monitor app health and metrics.'),
+('Using Thymeleaf for Dynamic Web Pages', 'My take on Thymeleaf templates versus other view technologies.'),
+('Microservices: Pros and Cons', 'What I found challenging and rewarding about microservice architecture.'),
+('Containerizing Apps with Docker', 'Step-by-step guide on dockerizing my Spring Boot application.'),
+('Caching Strategies to Improve Performance', 'How caching saved my app from unnecessary DB hits.'),
+('Integrating Kafka for Event-Driven Architecture', 'Setting up Kafka producers and consumers in Spring Boot.'),
+('Reactive Programming with WebFlux', 'My experience switching from MVC to reactive programming.'),
+('Managing Multiple Environments', 'How I use Spring profiles to separate dev, test, and prod settings.'),
+('Effective Logging Practices', 'How I configure logging to capture relevant information without noise.'),
+('Understanding Spring Boot Starters', 'Why I love using starter dependencies to get up and running quickly.'),
+('Database Migrations with Flyway', 'How I automate DB schema changes safely in my projects.'),
+('Versioning APIs Without Headaches', 'My approach to managing API versions and backward compatibility.'),
+('OAuth2 in Depth', 'A detailed walkthrough of implementing OAuth2 in Spring Security.'),
+('Using Lombok to Reduce Boilerplate', 'How Lombok made my entity classes cleaner and easier to maintain.'),
+('Messaging with RabbitMQ', 'How I implemented async messaging in my app using RabbitMQ.'),
+('Health Checks and Readiness Probes', 'Ensuring my application is healthy before traffic reaches it.') [42102-224]
+2025-09-25 14:57:06.109720+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "BLOG" not found; SQL statement:
+INSERT INTO blog (CONTENT, TITLE) VALUES
+('My Journey Learning Spring Boot', 'I started learning Spring Boot last year, and here are some tips.'),
+('Why Hibernate Makes Life Easier', 'An overview of Hibernate and why I prefer it over raw JDBC.'),
+('Building REST APIs the Right Way', 'Some best practices I follow when designing REST APIs.'),
+('Getting Started with Spring Security', 'How I secured my first Spring Boot app with minimal fuss.'),
+('OAuth2 Explained Simply', 'A beginner-friendly explanation of OAuth2 authentication.'),
+('Deploying Spring Boot Apps on AWS', 'My experience deploying a Spring Boot application to AWS Elastic Beanstalk.'),
+('Testing Tips for Spring Boot', 'How I write unit and integration tests using Spring Boot’s testing framework.'),
+('Understanding Spring Data JPA', 'What I learned about using repositories and JPQL queries effectively.'),
+('Handling Errors Gracefully', 'Techniques for providing better error messages and handling exceptions.'),
+('Spring Boot Actuator: Monitoring Made Easy', 'How Actuator helped me monitor app health and metrics.'),
+('Using Thymeleaf for Dynamic Web Pages', 'My take on Thymeleaf templates versus other view technologies.'),
+('Microservices: Pros and Cons', 'What I found challenging and rewarding about microservice architecture.'),
+('Containerizing Apps with Docker', 'Step-by-step guide on dockerizing my Spring Boot application.'),
+('Caching Strategies to Improve Performance', 'How caching saved my app from unnecessary DB hits.'),
+('Integrating Kafka for Event-Driven Architecture', 'Setting up Kafka producers and consumers in Spring Boot.'),
+('Reactive Programming with WebFlux', 'My experience switching from MVC to reactive programming.'),
+('Managing Multiple Environments', 'How I use Spring profiles to separate dev, test, and prod settings.'),
+('Effective Logging Practices', 'How I configure logging to capture relevant information without noise.'),
+('Understanding Spring Boot Starters', 'Why I love using starter dependencies to get up and running quickly.'),
+('Database Migrations with Flyway', 'How I automate DB schema changes safely in my projects.'),
+('Versioning APIs Without Headaches', 'My approach to managing API versions and backward compatibility.'),
+('OAuth2 in Depth', 'A detailed walkthrough of implementing OAuth2 in Spring Security.'),
+('Using Lombok to Reduce Boilerplate', 'How Lombok made my entity classes cleaner and easier to maintain.'),
+('Messaging with RabbitMQ', 'How I implemented async messaging in my app using RabbitMQ.'),
+('Health Checks and Readiness Probes', 'Ensuring my application is healthy before traffic reaches it.') [42102-224]
+2025-09-25 14:58:15.359217+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]1,'Versioning APIs Without Headaches', 'My approach to managing API versions and backward compatibility.'),\000d\000a(2,'OAuth2 in Depth', 'A detailed walkthrough of implementing OAuth2 in Spring Security.'),\000d\000a(3,'Using Lombok to Reduce Boilerplate', 'How Lombok made my entity classes cleaner and easier to maintain.'),\000d\000a(4,'Messaging with RabbitMQ', 'How I implemented async messaging in my app using RabbitMQ.'),\000d\000a(5,'Health Checks and Readiness Probes', 'Ensuring my application is healthy before traffic reaches it.')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(1,'Versioning APIs Without Headaches', 'My approach to managing API versions and backward compatibility.'),
+(2,'OAuth2 in Depth', 'A detailed walkthrough of implementing OAuth2 in Spring Security.'),
+(3,'Using Lombok to Reduce Boilerplate', 'How Lombok made my entity classes cleaner and easier to maintain.'),
+(4,'Messaging with RabbitMQ', 'How I implemented async messaging in my app using RabbitMQ.'),
+(5,'Health Checks and Readiness Probes', 'Ensuring my application is healthy before traffic reaches it.') [42001-224]
+2025-09-25 14:58:15.479029+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]1,'Versioning APIs Without Headaches', 'My approach to managing API versions and backward compatibility.'),\000d\000a(2,'OAuth2 in Depth', 'A detailed walkthrough of implementing OAuth2 in Spring Security.'),\000d\000a(3,'Using Lombok to Reduce Boilerplate', 'How Lombok made my entity classes cleaner and easier to maintain.'),\000d\000a(4,'Messaging with RabbitMQ', 'How I implemented async messaging in my app using RabbitMQ.'),\000d\000a(5,'Health Checks and Readiness Probes', 'Ensuring my application is healthy before traffic reaches it.')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(1,'Versioning APIs Without Headaches', 'My approach to managing API versions and backward compatibility.'),
+(2,'OAuth2 in Depth', 'A detailed walkthrough of implementing OAuth2 in Spring Security.'),
+(3,'Using Lombok to Reduce Boilerplate', 'How Lombok made my entity classes cleaner and easier to maintain.'),
+(4,'Messaging with RabbitMQ', 'How I implemented async messaging in my app using RabbitMQ.'),
+(5,'Health Checks and Readiness Probes', 'Ensuring my application is healthy before traffic reaches it.') [42001-224]
+2025-09-25 14:58:18.479287+05:30 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "([*]1,'Versioning APIs Without Headaches', 'My approach to managing API versions and backward compatibility.'),\000d\000a(2,'OAuth2 in Depth', 'A detailed walkthrough of implementing OAuth2 in Spring Security.'),\000d\000a(3,'Using Lombok to Reduce Boilerplate', 'How Lombok made my entity classes cleaner and easier to maintain.'),\000d\000a(4,'Messaging with RabbitMQ', 'How I implemented async messaging in my app using RabbitMQ.'),\000d\000a(5,'Health Checks and Readiness Probes', 'Ensuring my application is healthy before traffic reaches it.')"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(1,'Versioning APIs Without Headaches', 'My approach to managing API versions and backward compatibility.'),
+(2,'OAuth2 in Depth', 'A detailed walkthrough of implementing OAuth2 in Spring Security.'),
+(3,'Using Lombok to Reduce Boilerplate', 'How Lombok made my entity classes cleaner and easier to maintain.'),
+(4,'Messaging with RabbitMQ', 'How I implemented async messaging in my app using RabbitMQ.'),
+(5,'Health Checks and Readiness Probes', 'Ensuring my application is healthy before traffic reaches it.') [42001-224]
+2025-09-25 15:23:29.871978+05:30 jdbc[15]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-224]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:218)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:135)
+	at org.h2.Driver.connect(Driver.java:59)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:733)
+	at com.zaxxer.hikari.pool.HikariPool$PoolEntryCreator.call(HikariPool.java:712)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: The connection was not closed by the application and is garbage collected [90018-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:690)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 16 more
