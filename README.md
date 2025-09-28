@@ -6,15 +6,15 @@ A simple and secure Spring Boot application for managing blog posts. It supports
 
 ## 🚀 Features
 
-- 📝 **Public Blog Viewing:** Anyone can view blogs without logging in.
-- 🔐 **Authentication:**
-  - Form-based login (`/login`)
+- 📝 Public Blog Viewing: Anyone can view blogs without logging in.
+- 🔐 Authentication:
+  - Form-based login (/login)
   - OAuth2 login via Google and GitHub
-- ✍️ **Blog Management:** Create, update, delete blogs (requires login)
-- 🧠 **User Registration:** Manual registration via API
-- 🗃️ **Database:** H2 in-memory (no setup needed)
-- 🧪 **Unit Testing:** With Mockito for services and controllers
-- 📜 **Logging & Error Handling:** SLF4J + global exception handler
+- ✍️ Blog Management: Create, update, delete blogs (requires login)
+- 🧠 User Registration: Manual registration via API
+- 🗃️ Database: H2 in-memory (no setup needed)
+- 🧪 Unit Testing: With Mockito for services and controllers
+- 📜 Logging & Error Handling: SLF4J + global exception handler
 
 ---
 
@@ -41,35 +41,53 @@ cd blog-service-kiran
 # Build the project
 mvn clean install
 
-📌 Access the app
+# Run the app
+mvn spring-boot:run
 
-Base URL: http://localhost:9090
+## 📌 Access the app
 
-H2 Console: http://localhost:9090/h2-console
+Base URL: http://localhost:9090  
+H2 Console: http://localhost:9090/h2-console  
+Login Page: http://localhost:9090/login  
 
-Login Page: http://localhost:9090/login
+---
 
-🔐 OAuth2 Setup
+## 🔐 OAuth2 Setup
 
 Make sure to set these environment variables before running the app:
 
+```bash
 export GOOGLE_CLIENT_ID=your-google-client-id
 export GOOGLE_CLIENT_SECRET=your-google-client-secret
 
-📮 API Endpoints
-🌍 Public Access
-Method	Endpoint	Description
-GET	/api/blogs	Get all blogs
-GET	/api/blogs/{id}	Get blog by ID
-🔐 Authenticated Access
-Method	Endpoint	Description
-POST	/api/blogs/add	Add new blog
-PUT	/api/blogs/update/{id}	Update blog
-DELETE	/api/blogs/delete/{id}	Delete blog
-👤 User Registration
-Method	Endpoint	Description
-POST	/api/register	Register new user
-🧪 Sample Response
+## 📮 API Endpoints
+
+### 🌍 Public Access
+
+| Method | Endpoint         | Description    |
+|--------|------------------|----------------|
+| GET    | /api/blogs       | Get all blogs  |
+| GET    | /api/blogs/{id}  | Get blog by ID |
+
+### 🔐 Authenticated Access
+
+| Method | Endpoint               | Description   |
+|--------|------------------------|---------------|
+| POST   | /api/blogs/add         | Add new blog  |
+| PUT    | /api/blogs/update/{id} | Update blog   |
+| DELETE | /api/blogs/delete/{id} | Delete blog   |
+
+### 👤 User Registration
+
+| Method | Endpoint      | Description      |
+|--------|---------------|------------------|
+| POST   | /api/register | Register new user|
+
+---
+
+## 🧪 Sample Response
+
+```json
 [
   {
     "id": 1,
@@ -82,16 +100,3 @@ POST	/api/register	Register new user
     "content": "How I implemented async messaging in my app using RabbitMQ."
   }
 ]
-
-🧰 Developer Notes
-
-Port: 9090
-
-Database: H2 (auto-created at runtime)
-
-Login options: Form login, Google, GitHub
-
-Testing: Tested using Postman
-
-# Run the app
-mvn spring-boot:run
