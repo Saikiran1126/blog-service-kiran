@@ -1,17 +1,14 @@
-📘 BLOG-SERVICE-KIRAN
+Blog Service Kiran
 A simple and secure Spring Boot application for managing blog posts. It supports public viewing of blogs and authenticated CRUD operations using form login, Google OAuth2, and GitHub OAuth2. Built with love using Spring Boot, H2 database, and tested via Postman.
-
 🚀 Features
 
 📝 Public Blog Viewing: Anyone can view blogs without logging in.
 🔐 Authentication:
-
 Form-based login (/login)
 OAuth2 login via Google and GitHub
 
 
 ✍️ Blog Management:
-
 Create, update, delete blogs (requires login)
 
 
@@ -33,25 +30,29 @@ Postman (for testing)
 🛠️ How to Run Locally
 📦 Steps
 
-Clone the repo
+Clone the repo:
 git clone https://github.com/Saikiran1126/blog-service-kiran.git
 cd blog-service-kiran
 
-Build the project
+
+Build the project:
 mvn clean install
 
-Run the app
+
+Run the app:
 mvn spring-boot:run
 
-Access the app
+
+Access the app:
 
 Base URL: http://localhost:9090
 H2 Console: http://localhost:9090/h2-console
 Login Page: http://localhost:9090/login
 
-🔐 OAuth2 Setup
 
-Make sure to set these environment variables before running:
+
+🔐 OAuth2 Setup
+Set these environment variables before running:
 export GOOGLE_CLIENT_ID=your-google-client-id
 export GOOGLE_CLIENT_SECRET=your-google-client-secret
 
@@ -89,5 +90,5 @@ POST /api/register → Register new user
 
 Port: 9090
 Database: H2 (auto-created at runtime)
-Login options: Form login, Google, GitHub
-Tested using Postman
+Login Options: Form login, Google, GitHub
+Tested Using: Postman
