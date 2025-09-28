@@ -62,7 +62,7 @@ public class BlogController {
                 .body(new ApiResponse("Blog deleted successfully"));
     }
 
-    // Inner class for standardized API response
+    // API response
     private static class ApiResponse {
         private String message;
 
