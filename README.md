@@ -1,77 +1,74 @@
-Blog Service Kiran
+# 📘 BLOG-SERVICE-KIRAN
+
 A simple and secure Spring Boot application for managing blog posts. It supports public viewing of blogs and authenticated CRUD operations using form login, Google OAuth2, and GitHub OAuth2. Built with love using Spring Boot, H2 database, and tested via Postman.
-🚀 Features
 
-📝 Public Blog Viewing: Anyone can view blogs without logging in.
-🔐 Authentication:
-Form-based login (/login)
-OAuth2 login via Google and GitHub
+---
 
+## 🚀 Features
 
-✍️ Blog Management:
-Create, update, delete blogs (requires login)
+- 📝 **Public Blog Viewing:** Anyone can view blogs without logging in.
+- 🔐 **Authentication:**
+  - Form-based login (`/login`)
+  - OAuth2 login via Google and GitHub
+- ✍️ **Blog Management:** Create, update, delete blogs (requires login)
+- 🧠 **User Registration:** Manual registration via API
+- 🗃️ **Database:** H2 in-memory (no setup needed)
+- 🧪 **Unit Testing:** With Mockito for services and controllers
+- 📜 **Logging & Error Handling:** SLF4J + global exception handler
 
+---
 
-🧠 User Registration: Manual registration via API
-🗃️ Database: H2 in-memory (no setup needed)
-🧪 Unit Testing: With Mockito for services and controllers
-📜 Logging & Error Handling: SLF4J + global exception handler
+## ⚙️ Tech Stack
 
-⚙️ Tech Stack
+- Java 21
+- Spring Boot
+- Spring Security + OAuth2
+- Spring Data JPA
+- H2 Database
+- Maven
+- Postman (for testing)
 
-Java 21
-Spring Boot
-Spring Security + OAuth2
-Spring Data JPA
-H2 Database
-Maven
-Postman (for testing)
+---
 
-🛠️ How to Run Locally
-📦 Steps
+## 🛠️ How to Run Locally
 
-Clone the repo:
+### 📦 Steps
+
+```bash
 git clone https://github.com/Saikiran1126/blog-service-kiran.git
 cd blog-service-kiran
 
-
-Build the project:
+# Build the project
 mvn clean install
 
-
-Run the app:
-mvn spring-boot:run
-
-
-Access the app:
+📌 Access the app
 
 Base URL: http://localhost:9090
+
 H2 Console: http://localhost:9090/h2-console
+
 Login Page: http://localhost:9090/login
 
-
-
 🔐 OAuth2 Setup
-Set these environment variables before running:
+
+Make sure to set these environment variables before running the app:
+
 export GOOGLE_CLIENT_ID=your-google-client-id
 export GOOGLE_CLIENT_SECRET=your-google-client-secret
 
 📮 API Endpoints
 🌍 Public Access
-
-GET /api/blogs → Get all blogs
-GET /api/blogs/{id} → Get blog by ID
-
+Method	Endpoint	Description
+GET	/api/blogs	Get all blogs
+GET	/api/blogs/{id}	Get blog by ID
 🔐 Authenticated Access
-
-POST /api/blogs/add → Add new blog
-PUT /api/blogs/update/{id} → Update blog
-DELETE /api/blogs/delete/{id} → Delete blog
-
+Method	Endpoint	Description
+POST	/api/blogs/add	Add new blog
+PUT	/api/blogs/update/{id}	Update blog
+DELETE	/api/blogs/delete/{id}	Delete blog
 👤 User Registration
-
-POST /api/register → Register new user
-
+Method	Endpoint	Description
+POST	/api/register	Register new user
 🧪 Sample Response
 [
   {
@@ -89,6 +86,12 @@ POST /api/register → Register new user
 🧰 Developer Notes
 
 Port: 9090
+
 Database: H2 (auto-created at runtime)
-Login Options: Form login, Google, GitHub
-Tested Using: Postman
+
+Login options: Form login, Google, GitHub
+
+Testing: Tested using Postman
+
+# Run the app
+mvn spring-boot:run
